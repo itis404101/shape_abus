@@ -514,7 +514,7 @@ class FireworksAnimation {
                 const minDistance = circle1.size + circle2.size;
                 
                 // Check if circles are colliding
-                if (distance < minDistance) {
+                if (distance < minDistance && distance > 0) {
                     // Calculate collision normal
                     const nx = dx / distance;
                     const ny = dy / distance;
@@ -540,8 +540,8 @@ class FireworksAnimation {
                     // Calculate relative velocity in collision normal direction
                     const dvn = dvx * nx + dvy * ny;
                     
-                    // Do not resolve if velocities are separating
-                    if (dvn < 0) continue;
+                    // Only resolve if velocities are moving together (approaching)
+                    if (dvn > 0) continue;
                     
                     // Apply impulse (elastic collision with equal mass)
                     const impulse = dvn;
