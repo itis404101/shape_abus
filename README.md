@@ -14,7 +14,7 @@ An interactive canvas animation where shapes rotate, bounce, and suffer forever 
 
 ## 🎯 How to Use
 
-1. **Watch** - Observe 100 shapes spinning and suffering in the playground
+1. **Watch** - Observe 10 shapes spinning and suffering in the playground
 2. **Click** - Click anywhere to spawn new shapes at that location
 3. **Resize** - Use the sliders or +/- buttons to adjust the playground size
 4. **Escape Alerts** - Watch for the red alert banner when shapes bounce off walls
